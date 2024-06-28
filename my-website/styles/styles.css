@@ -1,0 +1,81 @@
+body {
+    background-color: #F5F7F8;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, #F4CE14, #379777, #45474B);
+    background-size: 200% 200%;
+    animation: gradient-animation 10s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#container {
+    text-align: center;
+    width: 300px;
+}
+
+#login-box, #signup-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-box h1, #signup-box h1, h1 {
+    margin-bottom: 20px;
+}
+
+#login-box input, #signup-box input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login-box button, #signup-box button, button {
+    background-color: #379777;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#login-box button:hover, #signup-box button:hover, button:hover {
+    background-color: #2e6d66;
+}
+
+#about-me {
+    margin-top: 20px;
+}
+
+#about-me a {
+    color: #45474B;
+    text-decoration: none;
+}
+
+#about-me a:hover {
+    text-decoration: underline;
+}
